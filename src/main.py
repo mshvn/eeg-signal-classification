@@ -25,7 +25,7 @@ class Cbc(object):
             iterations=10,
             learning_rate=0.5,
             depth=7,
-        )  # 20 0.5 7
+        )  # defaults are 20 0.5 7
         return
 
     def infer(self):
