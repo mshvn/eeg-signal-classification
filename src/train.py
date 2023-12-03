@@ -1,14 +1,7 @@
-# import numpy as np
 import pandas as pd
-
-# from sklearn.model_selection import GridSearchCV
 from catboost import CatBoostClassifier
 from sklearn.metrics import accuracy_score
-
-# , classification_report
 from sklearn.model_selection import train_test_split
-
-# from tqdm import tqdm
 
 
 def train_model(df_all_str, iterations, learning_rate, depth):
