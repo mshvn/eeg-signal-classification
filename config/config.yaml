@@ -1,0 +1,8 @@
+params:
+  df_all_str : "../data/raw/sp1s_aa_train.txt"
+  iterations: 10
+  learning_rate: 0.5
+  depth: 7
+
+  df_eval_str : "../data/raw/sp1s_aa_test.txt"
+  model_str : "../models/catboost/cbc.cbm"

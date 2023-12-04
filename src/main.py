@@ -8,41 +8,63 @@
 # isort src/*.py
 # flake8 src
 # pre-commit installed w/conda
+# pre-commit run --all-files
 
 # (eeg-catboost-py3.12) ➜  EEG_catboost deactivate
 # (base) ➜  EEG_catboost
 
 import fire
+from hydra import compose, initialize
+from omegaconf import OmegaConf
 
 from infer import infer_model
 from train import train_model
 
+initialize(version_base=None, config_path="../config", job_name="cbc_app")
+cfg = compose(config_name="config", overrides=[])
 
-class Cbc(object):
-    def train(self):
-        train_model(
-            df_all_str="../data/raw/sp1s_aa_train.txt",
-            iterations=10,
-            learning_rate=0.5,
-            depth=7,
-        )  # defaults are 20 0.5 7
-        return
 
-    def infer(self):
-        infer_model(
-            df_eval_str="../data/raw/sp1s_aa_test.txt",
-            model_str="../models/catboost/cbc.cbm",
-        )
-        return
+def train():
+    print("Hydra params (config.yaml):\n", OmegaConf.to_yaml(cfg))
 
-    def say(self):
-        print("MY NAME")
-        return
+    train_model(
+        cfg.params.df_all_str,
+        cfg.params.iterations,
+        cfg.params.learning_rate,
+        cfg.params.depth,
+    )
+    return
+
+
+def infer():
+    infer_model(cfg.params.df_eval_str, cfg.params.model_str)
+    return
 
 
 if __name__ == "__main__":
-    cbc_eeg = Cbc()
-    fire.Fire(cbc_eeg)
+    fire.Fire(
+        {
+            "train": train,
+            "infer": infer,
+        }
+    )
+
+
+# defaults are 20 0.5 7
+
+# train_model(df_all_str, iterations, learning_rate, depth)
+
+# train_model(
+# df_all_str="../data/raw/sp1s_aa_train.txt",
+# iterations=10,
+# learning_rate=0.5,
+# depth=7
+# )
+
+
+# if __name__ == "__main__":
+#     cbc_eeg = Cbc()
+#     fire.Fire(cbc_eeg)
 
 
 # if __name__ == "__main__":
