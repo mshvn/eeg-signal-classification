@@ -6,3 +6,5 @@ src/catboost_info/
 notebooks/
 models/catboost/
 data/raw
+/data
+/models
