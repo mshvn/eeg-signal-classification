@@ -42,12 +42,7 @@ def infer():
 
 
 if __name__ == "__main__":
-    fire.Fire(
-        {
-            "train": train,
-            "infer": infer,
-        }
-    )
+    fire.Fire({"train": train, "infer": infer})
 
 
 # defaults are 20 0.5 7
