@@ -15,9 +15,8 @@
 
 import fire
 from hydra import compose, initialize
-from omegaconf import OmegaConf
-
 from infer import infer_model
+from omegaconf import OmegaConf
 from train import train_model
 
 initialize(version_base=None, config_path="../config", job_name="cbc_app")
