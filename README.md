@@ -1,6 +1,10 @@
 
 # EEG Signal Classification for Action Prediction
 
+![HSE-MLDS22](https://img.shields.io/badge/HSE-MLDS22-blue)
+![ML-OPS](https://img.shields.io/badge/ML%20--%20OPS-8A2BE2)
+
+
 В задании используется датасет номер 4 из BCI competition II, задача бинарной классификации. Модель -- CatBoost.
 
 ## Описание датасета:
