@@ -1,6 +1,6 @@
 **/.DS_Store
-src/__pycache__/
-src/catboost_info/
+eeg-signal-classification/__pycache__/
+eeg-signal-classification/catboost_info/
 
 .venv/
 notebooks/
