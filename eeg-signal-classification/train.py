@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 from catboost import CatBoostClassifier
 from sklearn.metrics import accuracy_score
@@ -5,6 +7,9 @@ from sklearn.model_selection import train_test_split
 
 
 def train_model(df_all_str, iterations, learning_rate, depth):
+    print("Pulling from DVC...")
+    os.system("dvc pull")
+    # # #
     print("TRAIN starts")
     # df_all_str is string
     df_all = pd.read_fwf(df_all_str, header=None)
