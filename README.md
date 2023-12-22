@@ -18,8 +18,9 @@
 >Each epoch was 500 ms in length and ended at 130 ms before a keypress.
 >The recording was made using a NeuroScan amplifier.
 
-## Команды для запуска train и infer:
+## Для запуска train и infer:
 
+Выполнить cd в source директорию ```cd eeg-signal-classification```, затем:
 ```
 python3 commands.py train
 ```
