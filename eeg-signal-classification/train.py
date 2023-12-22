@@ -26,7 +26,7 @@ def train_model(df_all_str, iterations, learning_rate, depth):
 
     model = CatBoostClassifier(
         iterations=iterations, learning_rate=learning_rate, depth=depth
-    )  # 20 0.5 7
+    )  # defaults are 20 0.5 7
 
     model.fit(X_train, y_train)
 
@@ -39,10 +39,6 @@ def train_model(df_all_str, iterations, learning_rate, depth):
     print("Accuracy:", accuracy_score(y_test, preds_class))
     print("Actual:   ", list(y_test[:9]))
     print("Predicted:", list(preds_class[:9]))
-
-    # target_names = ['class 0', 'class 1']
-    # print(classification_report(y_test, preds_class,
-    # target_names=target_names))
 
     print("Saving model...")
     model.save_model("../models/catboost/cbc.cbm", format="cbm")
