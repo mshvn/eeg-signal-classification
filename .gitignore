@@ -9,3 +9,6 @@ models/catboost/
 data/raw
 /data
 /models
+
+result/*
+!result/.gitkeep
