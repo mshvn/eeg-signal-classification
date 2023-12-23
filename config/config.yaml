@@ -6,3 +6,7 @@ params:
 
   df_eval_str : "../data/raw/sp1s_aa_test.txt"
   model_str : "../models/catboost/cbc.cbm"
+
+mlops:
+    mlflow_server: "http://127.0.0.1:8080"
+    mlflow_server_alt: "http://128.0.1.1:8080"
