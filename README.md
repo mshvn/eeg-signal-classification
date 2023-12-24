@@ -20,7 +20,12 @@
 
 ## Для запуска train и infer:
 
-Выполнить cd в source директорию ```cd eeg-signal-classification```, затем:
+1) Запустить MLflow сервер по адресу ```http://128.0.1.1:8080```
+
+2) Выполнить cd в source директорию ```cd eeg-signal-classification```
+
+3) Ввести команды:
+
 ```
 python3 commands.py train
 ```
