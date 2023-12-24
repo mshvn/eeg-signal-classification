@@ -1,6 +1,7 @@
 **/.DS_Store
 eeg-signal-classification/__pycache__/
 eeg-signal-classification/catboost_info/
+eeg-signal-classification/mlruns
 
 .venv/
 notebooks/
@@ -8,3 +9,6 @@ models/catboost/
 data/raw
 /data
 /models
+
+/result
+!result/.gitkeep

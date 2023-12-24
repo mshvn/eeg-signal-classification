@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "eeg-catboost"
 version = "0.1.0"
-description = ""
-authors = ["mikhail.shuravin <mashuravin@edu.hse.ru>"]
+description = "ML-ops tools for sample project"
+authors = ["Mikhail Shuravin"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -19,6 +19,7 @@ dvc = "^3.30.3"
 catboost = "^1.2.2"
 dvc-gdrive = "^2.20.0"
 pre-commit = "^3.4.0"
+mlflow = "^2.9.2"
 
 
 [build-system]
