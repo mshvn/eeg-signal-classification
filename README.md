@@ -24,7 +24,9 @@
 
 2) Выполнить cd в source директорию ```cd eeg-signal-classification```
 
-3) Ввести команды:
+3) Проверить с помощью ls что Вы в нужной директории: ```__init__.py   commands.py   infer.py   train.py```
+
+4) Ввести команды:
 
 ```
 python3 commands.py train
