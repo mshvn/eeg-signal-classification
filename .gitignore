@@ -12,5 +12,4 @@ data/raw
 /models
 /mlruns
 
-/result
-!result/.gitkeep
+result/*.csv
