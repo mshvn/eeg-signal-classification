@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/898887541321670110/1a235449cbce492fb16211e80ae3897e/artifacts
+end_time: 1703517683396
+entry_point_name: ''
+experiment_id: '898887541321670110'
+lifecycle_stage: active
+run_id: 1a235449cbce492fb16211e80ae3897e
+run_name: thundering-quail-35
+run_uuid: 1a235449cbce492fb16211e80ae3897e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703517680380
+status: 3
+tags: []
+user_id: mike

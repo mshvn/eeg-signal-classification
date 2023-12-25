@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/898887541321670110
+creation_time: 1703516886462
+experiment_id: '898887541321670110'
+last_update_time: 1703516886462
+lifecycle_stage: active
+name: mlflow_train

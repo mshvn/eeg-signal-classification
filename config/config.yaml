@@ -1,6 +1,6 @@
 params:
   df_all_str : "../data/raw/sp1s_aa_train.txt"
-  iterations: 10
+  iterations: 20
   learning_rate: 0.5
   depth: 7
 

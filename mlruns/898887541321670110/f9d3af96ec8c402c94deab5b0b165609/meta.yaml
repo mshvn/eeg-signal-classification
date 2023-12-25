@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/898887541321670110/f9d3af96ec8c402c94deab5b0b165609/artifacts
+end_time: 1703516889835
+entry_point_name: ''
+experiment_id: '898887541321670110'
+lifecycle_stage: active
+run_id: f9d3af96ec8c402c94deab5b0b165609
+run_name: upbeat-chimp-250
+run_uuid: f9d3af96ec8c402c94deab5b0b165609
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703516886500
+status: 3
+tags: []
+user_id: mike

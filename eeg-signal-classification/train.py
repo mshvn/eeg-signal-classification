@@ -47,4 +47,8 @@ def start_train(df_all_str, iterations, learning_rate, depth):
     model.save_model("../models/catboost/cbc.cbm", format="cbm")
     print("Done.")
 
-    return accuracy, logloss["learn"]["Logloss"][-1]
+    return (
+        accuracy,
+        logloss["learn"]["Logloss"][-1],
+        model.get_best_score()["learn"]["Logloss"],
+    )

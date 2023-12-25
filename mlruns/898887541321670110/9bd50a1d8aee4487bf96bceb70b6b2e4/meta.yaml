@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/898887541321670110/9bd50a1d8aee4487bf96bceb70b6b2e4/artifacts
+end_time: 1703517125047
+entry_point_name: ''
+experiment_id: '898887541321670110'
+lifecycle_stage: active
+run_id: 9bd50a1d8aee4487bf96bceb70b6b2e4
+run_name: powerful-goose-992
+run_uuid: 9bd50a1d8aee4487bf96bceb70b6b2e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703517122290
+status: 3
+tags: []
+user_id: mike

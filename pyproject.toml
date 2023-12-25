@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "eeg-catboost"
+name = "eeg_catboost"
 version = "0.1.0"
 description = "ML-ops tools for sample project"
 authors = ["Mikhail Shuravin"]

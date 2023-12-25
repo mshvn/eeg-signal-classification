@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/898887541321670110/e51ace34d10241f991e884246372ec63/artifacts
+end_time: 1703517069554
+entry_point_name: ''
+experiment_id: '898887541321670110'
+lifecycle_stage: active
+run_id: e51ace34d10241f991e884246372ec63
+run_name: rambunctious-ox-266
+run_uuid: e51ace34d10241f991e884246372ec63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703517066753
+status: 3
+tags: []
+user_id: mike
