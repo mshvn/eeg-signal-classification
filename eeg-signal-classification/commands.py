@@ -13,7 +13,7 @@ from train import start_train
 def train():
     """Train entry point"""
 
-    mlflow.set_tracking_uri(uri=cfg.mlops.mlflow_server)
+    mlflow.set_tracking_uri(uri=cfg.mlops.mlflow_server_alt)
     mlflow.set_experiment("mlflow_train")
 
     repo = git.Repo(search_parent_directories=True)
