@@ -9,7 +9,7 @@ def start_infer(df_eval_str, model_str):
     cb_cls = CatBoostClassifier()
     cb_cls.load_model(model_str)
 
-    # print(from_file.predict(df_eval))
+    # print(cb_cls.predict(df_eval))
 
     out = cb_cls.predict(df_eval)
     print("Writing to output...")
